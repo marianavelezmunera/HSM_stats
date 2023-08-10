@@ -15,7 +15,7 @@ cancion<-ggplot(data=data,aes(x=Pelicula,y=Puntaje_cancion,fill=Mariana))+
   theme(axis.title.y = element_text(family = "Lato",size=16,face="bold"))+
   theme(axis.text.x = element_text(family = "Lato",size=12))+
   theme(axis.title.x = element_text(family = "Lato",size=16,face="bold"))
-
+cancion
 momento<-ggplot(data=data,aes(x=Pelicula,y=Puntaje_momento,fill=Mariana))+
   geom_boxplot()+
   theme_bw()+
@@ -27,6 +27,8 @@ momento<-ggplot(data=data,aes(x=Pelicula,y=Puntaje_momento,fill=Mariana))+
   theme(axis.text.x = element_text(family = "Lato",size=12))+
   theme(axis.title.x = element_text(family = "Lato",size=16,face="bold"))
 
+momento
+
 letra<-ggplot(data=data,aes(x=Pelicula,y=Puntaje_letra,fill=Mariana))+
   geom_boxplot()+
   theme_bw()+
@@ -37,6 +39,7 @@ letra<-ggplot(data=data,aes(x=Pelicula,y=Puntaje_letra,fill=Mariana))+
   theme(axis.title.y = element_text(family = "Lato",size=16,face="bold"))+
   theme(axis.text.x = element_text(family = "Lato",size=12))+
   theme(axis.title.x = element_text(family = "Lato",size=16,face="bold"))
+letra
 
 total<-ggplot(data=data,aes(x=Pelicula,y=puntaje_total,fill=Mariana))+
   geom_boxplot()+
@@ -48,7 +51,9 @@ total<-ggplot(data=data,aes(x=Pelicula,y=puntaje_total,fill=Mariana))+
   theme(axis.title.y = element_text(family = "Lato",size=16,face="bold"))+
   theme(axis.text.x = element_text(family = "Lato",size=12))+
   theme(axis.title.x = element_text(family = "Lato",size=16,face="bold"))
+total
 completo<-cancion+momento+letra+total+plot_layout(guides = "collect")
+
 completo
 
 # T test

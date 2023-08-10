@@ -7,6 +7,7 @@ library(cowplot)
 library(ggpubr)
 library(patchwork)
 library(gt)
+library(car)
 
 # Mariana's data
 HSM_ML <- read_excel("HSM_ML.xlsx", col_types = c("text", "text", "text", "numeric","numeric", "numeric", "text", "skip", "skip", "skip", "skip", "skip", "skip"))

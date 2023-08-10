@@ -1,5 +1,5 @@
 # Correlation
-cor(data$Puntaje_momento,data$Puntaje_cancion)
+cor(data$Puntaje_momento,data$Puntaje_cancion,method = "spearman")
 mod<-lm(Puntaje_cancion~Puntaje_momento,data=data)
 summary(mod)
 
